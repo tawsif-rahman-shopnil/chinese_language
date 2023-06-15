@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_detail" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="30sp" android:textColor="#a1253e" android:gravity="center" android:id="@+id/top_bar" android:background="#efeeef" android:layout_width="match_parent" android:layout_height="56dp" android:text="Chinese Language" android:fontFamily="@font/ch"/>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar">
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/item_image_view" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="centerCrop"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/item_title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <TextView android:id="@+id/item_description_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <RatingBar android:id="@+id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <Button android:layout_gravity="center" android:id="@+id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/back_button"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
